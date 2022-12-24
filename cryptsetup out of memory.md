@@ -9,7 +9,7 @@ which assumes that the key slot 1 is free (you can find free key slots by inspec
 Then, in your less powerful computer, unlock the device with
 
 ```
-cryptsetup luksOpen -S 1 /dev/sdxy name
+cryptsetup luksOpen -S 1 /dev/sdb1 sdb1
 ```
 
 The -S 1 is essential, otherwise the more expensive key may be tried and the OOM killer triggered all the same.
